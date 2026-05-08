@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Energy">
+<title>Energy</title>
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- header -->
+<header>
+  <div class="container">
+
+    <a href="index.html" class="header-logo">
+      <img src="img/AdobeStock_631390583.png">
+      <strong>Energy</strong>
+    </a>
+
+    <button class="menu-btn" id="menuBtn"> ☰ </button>
+
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="water.html">Water</a></li>
+        <li><a href="energy.html">Energy</a></li>
+        <li><a href="materials.html">Materials</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<!-- hero -->
+<div class="hero-energy">
+  <div class="container">
+    <h1>Energy</h1>
+  </div>
+</div>
+
+<!-- training & inference -->
+<div class="cooling-section">
+  <div class="container">
+
+    <h1 class="center-heading">Training and Inference</h1>
+
+    <p>
+      Large AI models require substantial energy during training. Training involves processing
+      massive datasets across thousands of specialized processors over extended periods. This phase
+      can consume megawatt-hours of electricity.
+    </p>
+
+    <p>
+      After training, models continue to consume energy during inference. Every time a user submits a
+      query, generates text, or processes an image, computational resources are used. As AI becomes
+      integrated into everyday products, inference demand becomes continuous and cumulative.
+    </p>
+
+  </div>
+</div>
+
+<!-- data centers -->
+<div class="cooling-section">
+  <div class="container">
+
+    <h1 class="center-heading">Data Centers and Emissions</h1>
+
+    <p>
+      AI workloads are concentrated in large-scale data centers. These facilities require stable,
+      high-capacity electricity and operate continuously.
+    </p>
+
+    <p>
+      Environmental impact depends on several interrelated infrastructure factors.
+    </p>
+
+  </div>
+</div>
+
+<!-- table section -->
+<section class="water-table-section">
+  <div class="container">
+
+    <h2>Factors Influencing AI Energy Impact</h2>
+
+    <table class="water-table">
+      <tr>
+        <th>Factor</th>
+        <th>What It Affects</th>
+        <th>Environmental Implication</th>
+      </tr>
+
+      <tr>
+        <td>Grid Carbon Intensity</td>
+        <td>Emissions per unit of electricity</td>
+        <td>Fossil-fuel grids increase AI-related carbon output</td>
+      </tr>
+
+      <tr>
+        <td>Hardware Efficiency</td>
+        <td>Energy required per computation</td>
+        <td>Efficient processors reduce overall electricity demand</td>
+      </tr>
+
+      <tr>
+        <td>Cooling Design</td>
+        <td>Total facility power load</td>
+        <td>Inefficient cooling increases system-wide energy use</td>
+      </tr>
+
+      <tr>
+        <td>Renewable Energy Sourcing</td>
+        <td>Energy origin</td>
+        <td>Renewable procurement lowers carbon intensity</td>
+      </tr>
+
+    </table>
+
+    <p class="table-note">
+      Impact varies by region. In fossil-fuel–dependent areas, AI expansion can increase emissions.
+      In renewable-powered regions, impact may be lower, though infrastructure demand still rises.
+    </p>
+
+  </div>
+</section>
+
+<!-- explore -->
+<section class="explore-section">
+  <div class="container">
+
+    <h2 class="explore-title">Continue Exploring AI and the Environment</h2>
+
+    <div class="explore-grid">
+
+      <div class="explore-card">
+        <h3>Energy</h3>
+        <p>Electricity demand, model training, and grid impact</p>
+        <a href="energy.html" class="explore-link">View Energy →</a>
+      </div>
+
+      <div class="explore-card">
+        <h3>Water</h3>
+        <p>Cooling systems and regional water constraints</p>
+        <a href="water.html" class="explore-link">View Water →</a>
+      </div>
+
+      <div class="explore-card">
+        <h3>Materials</h3>
+        <p>Semiconductor production, extraction, and e-waste</p>
+        <a href="materials.html" class="explore-link">View Materials →</a>
+      </div>
+
+      <div class="explore-card">
+        <h3>Research & Sources</h3>
+        <p>Reports, policy frameworks, and industry disclosures</p>
+        <a href="resources.html" class="explore-link">View Resources →</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+	
+<div class="hero-text">
+  <span class="title">The AI Footprint</span>
+  <span class="subtitle">
+    Examining the physical infrastructure behind digital intelligence.
+  </span>
+</div>
+  <div class="container">
+
+    <div class="footer-column">
+
+      <div class="footer-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="energy.html">Energy</a></li>
+          <li><a href="water.html">Water</a></li>
+          <li><a href="materials.html">Materials</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-copyright">
+      <p>&copy; 2026 The AI Footprint.</p>
+		 <p>For educational and research purposes.</p>
+    </div>
+
+  </div>
+</footer>
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const nav = document.getElementById("nav");
+
+  menuBtn.addEventListener("click", function () {
+    nav.classList.toggle("open");
+  });
+</script>
+</body>
+</html>
